@@ -20,7 +20,7 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
-  DIY_P1_SH: ipq-40xx/hiwifi-c526a-part1.sh
+  DIY_P1_SH: ipq-40xx/hiwifi-c526a-128m-part1.sh
   DIY_P2_SH: ipq-40xx/hiwifi-c526a-128m-part2.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
