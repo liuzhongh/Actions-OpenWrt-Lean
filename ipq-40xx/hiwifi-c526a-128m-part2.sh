@@ -59,10 +59,15 @@ CONFIG_PACKAGE_curl=y
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_screen=y
 CONFIG_PACKAGE_autocore-arm=y
-
 CONFIG_PACKAGE_luci=y
 CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-lib-ipkg=y
+EOF
+
+# Kernel build options
+cat >> .config <<EOF
+CONFIG_KERNEL_BUILD_DOMAIN="liuzhongh@github"
+CONFIG_KERNEL_BUILD_USER="liuzhongh"
 EOF
 
 # FFmpeg
@@ -104,7 +109,6 @@ CONFIG_PACKAGE_v2ray=y
 CONFIG_PACKAGE_ddns-scripts_dnspod=y
 CONFIG_PACKAGE_luci-app-guest-wifi=y
 CONFIG_PACKAGE_luci-app-ttyd=y
-
 CONFIG_PACKAGE_default-settings=y
 EOF
 
