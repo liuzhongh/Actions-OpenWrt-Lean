@@ -14,17 +14,17 @@ CONFIG_TARGET_ath79_generic_DEVICE_mercury_mw4530r-v1=y
 EOF
 
 # IPV6
-cat >> .config <<EOF
-CONFIG_IPV6=y
-CONFIG_PACKAGE_ip6tables=y
-CONFIG_PACKAGE_iptables-mod-extra=y
-CONFIG_PACKAGE_iptables-mod-nat-extra=y
-CONFIG_PACKAGE_ipv6helper=y
-CONFIG_PACKAGE_odhcp6c=y
-CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
-CONFIG_PACKAGE_odhcpd-ipv6only=y
-CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
-EOF
+#cat >> .config <<EOF
+#CONFIG_IPV6=y
+#CONFIG_PACKAGE_ip6tables=y
+#CONFIG_PACKAGE_iptables-mod-extra=y
+#CONFIG_PACKAGE_iptables-mod-nat-extra=y
+#CONFIG_PACKAGE_ipv6helper=y
+#CONFIG_PACKAGE_odhcp6c=y
+#CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
+#CONFIG_PACKAGE_odhcpd-ipv6only=y
+#CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
+#EOF
 
 # 取消默认启用的包
 cat >> .config <<EOF
@@ -67,10 +67,10 @@ CONFIG_PACKAGE_luci-lib-ipkg=y
 EOF
 
 # Kernel build options
-cat >> .config <<EOF
-CONFIG_KERNEL_BUILD_DOMAIN="liuzhongh@github"
-CONFIG_KERNEL_BUILD_USER="liuzhongh"
-EOF
+#cat >> .config <<EOF
+#CONFIG_KERNEL_BUILD_DOMAIN="liuzhongh@github"
+#CONFIG_KERNEL_BUILD_USER="liuzhongh"
+#EOF
 
 # FFmpeg
 cat >> .config <<EOF
@@ -91,8 +91,8 @@ EOF
 #EOF
 
 cat >> .config <<EOF
-CONFIG_PACKAGE_AdGuardHome=y
-CONFIG_PACKAGE_luci-app-adguardhome=y
+#CONFIG_PACKAGE_AdGuardHome=y
+#CONFIG_PACKAGE_luci-app-adguardhome=y
 CONFIG_PACKAGE_luci-app-nlbwmon=y
 CONFIG_PACKAGE_luci-app-adbyby-plus=y
 CONFIG_PACKAGE_luci-app-aria2=y
@@ -124,10 +124,10 @@ EOF
 #
 # 多拨负载均衡
 #
-cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-syncdial=y
-CONFIG_PACKAGE_luci-app-mwan3=y
-CONFIG_PACKAGE_luci-app-mwan3helper=y
-EOF
+#cat >> .config <<EOF
+#CONFIG_PACKAGE_luci-app-syncdial=y
+#CONFIG_PACKAGE_luci-app-mwan3=y
+#CONFIG_PACKAGE_luci-app-mwan3helper=y
+#EOF
 # 其它
 # sed -i '21d' package/lean/default-settings/files/zzz-default-settings #禁止网络共享分类到NAS
