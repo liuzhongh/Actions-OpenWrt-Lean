@@ -61,9 +61,6 @@ CONFIG_PACKAGE_curl=y
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_screen=y
 CONFIG_PACKAGE_autocore-arm=y
-CONFIG_PACKAGE_luci=y
-CONFIG_PACKAGE_luci-compat=y
-CONFIG_PACKAGE_luci-lib-ipkg=y
 EOF
 
 # Kernel build options
@@ -91,27 +88,11 @@ EOF
 #EOF
 
 cat >> .config <<EOF
-#CONFIG_PACKAGE_AdGuardHome=y
-#CONFIG_PACKAGE_luci-app-adguardhome=y
-CONFIG_PACKAGE_luci-app-nlbwmon=y
 CONFIG_PACKAGE_luci-app-adbyby-plus=y
-CONFIG_PACKAGE_luci-app-aria2=y
-CONFIG_PACKAGE_luci-app-ramfree=y
-CONFIG_PACKAGE_luci-app-netdata=y
-CONFIG_PACKAGE_luci-app-ddns=y
-CONFIG_PACKAGE_luci-app-filetransfer=y
-CONFIG_PACKAGE_luci-app-vsftpd=y
 CONFIG_PACKAGE_luci-app-ssr-plus=y
-CONFIG_PACKAGE_luci-app-arpbind=y
-CONFIG_PACKAGE_luci-app-wol=y
 CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_luci-app-accesscontrol=y
-CONFIG_PACKAGE_luci-app-cpufreq=y
 CONFIG_PACKAGE_v2ray=y
-CONFIG_PACKAGE_ddns-scripts_dnspod=y
-CONFIG_PACKAGE_luci-app-guest-wifi=y
-CONFIG_PACKAGE_luci-app-ttyd=y
-CONFIG_PACKAGE_default-settings=y
 EOF
 
 #
