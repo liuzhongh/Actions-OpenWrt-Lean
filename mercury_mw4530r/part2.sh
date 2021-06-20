@@ -2,8 +2,8 @@
 sed -i 's/192.168.1.1/192.168.199.1/g' package/base-files/files/bin/config_generate
 
 # 默认主题
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-sed -i '/<footer>/a <a href=\"https:\/\/github.com\/liuzhongh\/Actions-OpenWrt">Build by Liuzhongh<\/a>' feeds/luci/themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/footer.htm
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+# sed -i '/<footer>/a <a href=\"https:\/\/github.com\/liuzhongh\/Actions-OpenWrt">Build by Liuzhongh<\/a>' feeds/luci/themes/luci-theme-bootstrap/luasrc/view/themes/bootstrap/footer.htm
 
 # 固件架构
 cat >> .config <<EOF
@@ -70,12 +70,12 @@ EOF
 #EOF
 
 # FFmpeg
-cat >> .config <<EOF
-CONFIG_PACKAGE_libopus=y
-CONFIG_PACKAGE_libx264=y
-CONFIG_PACKAGE_ffmpeg=y
-CONFIG_PACKAGE_ffprobe=y
-EOF
+# cat >> .config <<EOF
+# CONFIG_PACKAGE_libopus=y
+# CONFIG_PACKAGE_libx264=y
+# CONFIG_PACKAGE_ffmpeg=y
+# CONFIG_PACKAGE_ffprobe=y
+# EOF
 
 # 常用软件 默认已启用
 #cat >> .config <<EOF
@@ -91,16 +91,16 @@ cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-adbyby-plus=y
 CONFIG_PACKAGE_luci-app-ssr-plus=y
 CONFIG_PACKAGE_luci-app-turboacc=y
-CONFIG_PACKAGE_luci-app-accesscontrol=y
+# CONFIG_PACKAGE_luci-app-accesscontrol=y
 CONFIG_PACKAGE_v2ray=y
 EOF
 
 #
 # 4. Themes
 #
-cat >> .config <<EOF
-CONFIG_PACKAGE_luci-theme-argon=y
-EOF
+# cat >> .config <<EOF
+# CONFIG_PACKAGE_luci-theme-argon=y
+# EOF
 
 #
 # 多拨负载均衡
