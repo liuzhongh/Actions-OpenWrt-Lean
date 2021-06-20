@@ -9,6 +9,7 @@ sed -i '/<footer>/a <a href=\"https:\/\/github.com\/liuzhongh\/Actions-OpenWrt">
 cat >> .config <<EOF
 CONFIG_TARGET_ath79=y
 CONFIG_TARGET_ath79_generic=y
+CONFIG_TARGET_MULTI_PROFILE=y
 CONFIG_TARGET_ath79_generic_DEVICE_mercury_mw4530r-v1=y
 EOF
 
