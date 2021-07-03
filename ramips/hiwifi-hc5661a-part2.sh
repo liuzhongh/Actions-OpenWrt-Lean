@@ -7,8 +7,9 @@ sed -i '/<footer>/a <a href=\"https:\/\/github.com\/liuzhongh\/Actions-OpenWrt">
 
 # 固件架构
 cat >> .config <<EOF
-CONFIG_TARGET_mt76x8=y
-CONFIG_TARGET_mt76x8_DEVICE_hiwifi_hc5661a=y
+CONFIG_TARGET_ramips=y
+CONFIG_TARGET_ramips_mt76x8=y
+CONFIG_TARGET_ramips_mt76x8_DEVICE_hiwifi_hc5661a=y
 EOF
 
 # IPV6
